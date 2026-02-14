@@ -1,40 +1,36 @@
-# Assignment 1 - Personal Portfolio
-A simple, responsive personal portfolio built with HTML, CSS, and JavaScript. The site highlights an intro, projects, skills, and a contact form.
+# Technical Documentation
+This document explains **how the site is built**, and **what the code structure looks like** so the reviewer can understand and extend the project quickly
 
-## Project description
-This portfolio showcases my well-understanding and background in the concept of web development in a clean, minimal layout:
-- **Intro** with interactive buttons to navigate to the projects and contact sections
-- **About** section with a brief bio
-- **Skills** section listing key tools and strengths
-- **Projects** grid with example projects mixed between personal and academic work
-- **Contact** section with a client-side validated form (no backend)
-- **Used technologies:** HTML, CSS, and a JS file.
+
+# How is it built
+Technical choices:
+- **HTML** for semantic structure of sections
+- **CSS** (Flexbox + Grid + CSS variables) for layout, spacing, and theming
+- **JavaScript** for small interactions - the greeting/**time-based**
+
 
 **Structure:**
 ```
-README.md
-index.html
-css/
-  style.css
-js/
-  script.js
-assets/
-  images 
-docs/
-  ai-usage-report.md      
-  technical-documentation.md 
+assignment-1/
+├── README.md
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+├── assets/
+│   └── images/
+├── docs/
+│   ├── ai-usage-report.md
+│   └── technical-documentation.md
+└── .gitignore
 ```
-
-## Setup instructions
-To run the project locally, follow these steps:
-1. Clone the repository.
-2. Open any code editor (e.g., WebStorm, VS Code) and navigate to the project directory.
-3. Right click on `index.html` and select "Open in Browser" to view the portfolio.
-
-
-## Short summary of AI use
->Note: A detailed AI usage report is available in `docs/ai-usage-report.md`
- 
-### I mainly used AI to:
-- Adjust the layout and improve the documentation (this file), color scheme, responsive behavior and implement time-based functionalities. 
-
+## File roles
+- **README.md** — Project overview and local setup instructions
+- **index.html** — All page sections and their semantic structure. includes links to `styles.css` and `script.js`
+- **css/styles.css** — Theme variables, base styles (colors & spacing), section layouts, and grids/flex rules
+- **js/script.js** — Minimal interaction logic (time-based greeting)
+- **assets/** — images used in the website
+- **docs/** — Written documentation: AI usage report and technical document
+- **.gitignore** — Ignore node_modules, build artifacts, and IDE config files (if any) to keep the repo clean
+> **Note:** No build tooling is used (no bundlers, frameworks, or package installs) to keep the project simple and easy to run locally by opening `index.html` directly in a browser
