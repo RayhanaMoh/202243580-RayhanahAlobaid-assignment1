@@ -1,0 +1,493 @@
+/* colors and fonts */
+:root {
+    --primary-green: #0a2f1f;
+    --secondary-green: #7cba5c;
+    --accent-yellow: #f1c40f;
+    --main-gradient: linear-gradient(1000deg, #1b4d3e, #f1c40f);
+    --bg-dark: #05140f;
+    --text-white: #ffffff;
+    --text-gray: #a8b2ae;
+    --btn-shadow: rgba(46, 204, 113, 0.3);
+}
+
+/* enables smooth scrolling globally */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*Stander spacing for sections */
+section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: clamp(500px, 8vw, 500px) 0;
+}
+
+/* Layout the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* Fixed Header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    background-color: var(--bg-dark);
+    font-size: clamp(20px, 2.5vw, 35px);
+}
+
+/* Header Content - top left name */
+.nameLeft {
+    font-size: clamp(20px, 3vw, 40px);
+    font-weight: bold;
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Header Content - top right nav */
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: clamp(10px, 2vw, 30px);
+}
+
+#greeting{
+    padding-right: 400px;
+
+}
+
+/* First Content */
+.middle-content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(60px, 10vw, 150px);
+    margin: 10px 0;
+    text-align: center;
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.description {
+    max-width: 600px;
+    color: var(--text-gray);
+    line-height: 2;
+    margin: 0;
+    font-size: clamp(25px, 4vw, 60px);
+    text-align: center;
+    white-space: nowrap;
+    padding-bottom: 50px;
+}
+
+span {
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*buttons */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style each btn individually to allow for different hover effects */
+.letsTalk-btn{
+    padding: clamp(10px, 2vw, 10px) clamp(30px, 5vw, 70px);
+    background: var(--main-gradient);
+    box-shadow: 0 10px 25px var(--btn-shadow);
+    color: var(--text-white) !important;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: clamp(18px, 2.5vw, 30px);
+}
+.letsTalk-btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-1 {
+    padding: clamp(15px, 2vw, 27px) clamp(30px, 5vw, 70px);
+    background: var(--main-gradient);
+    box-shadow: 0 10px 25px var(--btn-shadow);
+    color: var(--text-white) !important;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: clamp(18px, 2.5vw, 30px);
+}
+.btn-1:hover {
+    transform: translateY(-2px);
+}
+
+.btn-2 {
+    border: 2px solid transparent;
+    background:
+            linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
+            var(--main-gradient) border-box;
+    color: var(--secondary-green);
+    padding: clamp(15px, 2vw, 27px) clamp(30px, 5vw, 70px);
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: clamp(18px, 2.5vw, 30px);
+}
+
+.btn-2:hover {
+    transform: translateY(-2px);
+}
+
+
+/* About me section */
+.about-me .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about-me h2 {
+    font-size: clamp(40px, 6vw, 150px);
+    background: linear-gradient(-10deg, var(--primary-green), var(--secondary-green) );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: clamp(30px, 3vw, 200px);
+    color: var(--text-gray);
+    line-height: 1.8;
+    text-align: left;
+}
+
+.profileImg {
+    width: clamp(50px, 20vw, 450px);
+    height: clamp(50px, 20vw, 450px);
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+    background: var(--main-gradient);
+    box-shadow: 0 15px 40px var(--btn-shadow);
+}
+.profileImg:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills {
+    padding: clamp(80px, 10vw, 250px) 0;
+}
+
+.skills-title {
+    font-size: clamp(40px, 6vw, 80px);
+    text-align: center;
+    margin-bottom: clamp(40px, 6vw, 80px);
+    color: var(--text-white);
+    padding-top: 280px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* creates responsive columns with minimum width 400px and expands to fill available space */
+    gap: 30px;
+    margin: 0 auto;
+    padding-bottom: 220px;
+
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: clamp(25px, 4vw, 40px);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-yellow);
+    box-shadow: 0 10px 30px var(--btn-shadow);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: clamp(18px, 2.5vw, 24px);
+    color: var(--text-white);
+    margin: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--main-gradient);
+    border-radius: 10px;
+}
+
+.skill-percentage {
+    font-size: clamp(14px, 2vw, 18px);
+    color: var(--text-gray);
+    margin: 0;
+}
+
+/* Projects Section */
+.project {
+    padding: clamp(80px, 10vw, 150px) 0;
+}
+
+.project-title {
+    font-size: clamp(40px, 6vw, 80px);
+    text-align: center;
+    margin-bottom: clamp(40px, 6vw, 80px);
+    color: var(--text-white);
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+/* Added Fixes for Shrinking Cards */
+.project-grid > .project-card {
+    min-width: 0;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    /* Changed overflow to visible to prevent clipping text */
+    overflow: visible;
+    backdrop-filter: blur(20px);
+    box-shadow: var(--btn-shadow);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-yellow);
+    box-shadow: 0 10px 30px var(--btn-shadow);
+}
+
+.project-image, .project-content {
+    flex: 1 1 50%;
+    min-width: 0; /* allows inner content to shrink */
+}
+
+/* Force text wrap and better spacing */
+.project-content h3,
+.project-content p {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.35;
+    padding-left: 30px;
+}
+
+.project-content h3 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    font-size: 30px;
+    color: #aaa;
+}
+
+/* keep image rounded even with overflow visible on card */
+.project-card img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.project-image{
+    flex: 1 1 50%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+/* Contact Section */
+.contact {
+    padding: clamp(150px, 15vw, 300px) 0;}
+
+.contact-title {
+    font-size: clamp(40px, 6vw, 80px);
+    text-align: center;
+    margin-bottom: clamp(40px, 6vw, 80px);
+    color: var(--text-white);
+}
+.contact-subtitle{
+    font-size: clamp(30px, 3vw, 200px);
+    color: var(--text-gray);
+    text-align: center;
+}
+.contact-card{
+    background: rgba(255, 255, 255, 0.02); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    padding: clamp(40px, 10vw, 80px);
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+}
+
+.input-field{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: clamp(30px, 3vw, 40px);
+    color: var(--text-white);
+}
+
+.input-wrapper {
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.input-wrapper:focus-within {
+    /* changes border color when input inside is focused */
+    border-color: var(--primary-green);
+    box-shadow: 0 0 15px var(--btn-shadow);
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 30px 60px 60px 0;
+    font-size: clamp(18px, 1.5vw, 24px);
+}
+
+.input-wrapper input{
+    padding: 25px 25px 25px 0;
+}
+
+.input-wrapper textarea {
+    resize: none;
+    min-height: 200px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: clamp(15px, 3vw, 28px);
+    border-radius: 20px;
+    border: none;
+    background: var(--main-gradient);
+    color: white;
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: bold;
+    cursor: pointer; /* changes mouse to cursor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 10px 20px var(--btn-shadow);
+}
+
+.submit-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--btn-shadow);
+}
+
+/* Footer Styles */
+.footer {
+    padding: clamp(40px, 5vw, 60px) 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--bg-dark);
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: clamp(30px, 2vw, 40px);
+    color: var(--text-gray);
+    margin: 0;
+    letter-spacing: 1px;
+}

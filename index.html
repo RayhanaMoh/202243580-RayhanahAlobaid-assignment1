@@ -2,9 +2,249 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Rayhanah's Portfolio</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link to external JavaScript file -->
+    <script defer src="js/script.js"></script>
 </head>
-<body>
 
+<body>
+<!--             1              -->
+<!--  Header & Navigation  -->
+    <header>
+        <div class= "container header-flex">
+            <div class="nameLeft" id="nameLeft">Rayhanah Alobaid</div> <!-- Website name -->
+            <nav class="nav"> <!-- Navigation menu -->
+                <p id="greeting"></p>
+                <!-- Navigation links to page sections -->
+                <a href="#about" id="aboutLink">About Me</a>
+                <a href="#skills" id="skillsLink">Skills</a>
+                <a href="#projects" id="projectsLink">Projects</a>
+                <a href="#letsTalk" class="letsTalk-btn" id="contactBtn">Let's Talk</a>
+            </nav>
+        </div>
+    </header>
+
+<!--  Main content section  -->
+    <section class="middle-content" id="content">
+        <div class="container">
+
+            <!-- Main introduction text -->
+                <div class="content">
+                    <h1> Rayhanah Alobaid</h1>
+                    <p class="description">Software Engineer Student @kfupm</p>
+                </div>
+
+            <!-- Action buttons -->
+            <div class="buttons">
+                <a href="#github" class="btn-1" id="githubBtn">GitHub</a>
+                <a href="#CV" class="btn-2" id="cv">Download CV</a>
+            </div>
+
+        </div>
+    </section>
+
+
+<!--             2           -->
+<!--  About me section -->
+
+<section class="about-me" id="about">
+    <div class="container">
+        <!-- Left side: profile img -->
+        <div class="col">
+            <img class="profileImg"  src="assest/images/rr.jpg" alt="Rayhana's Image">
+        </div>
+
+        <!-- right side: about-me text -->
+        <div class="col">
+            <h2><span>About Me</span></h2>
+            <p> <!-- short intro -->
+                <em>I'm Rayhanah Alobaid, a software engineer with a passion for creating innovative solutions.
+                I have experience in web development, mobile app development, and software design.
+                I enjoy working on challenging projects and collaborating with teams to bring ideas to life.</em> </p>
+        </div>
+
+    </div>
+</section>
+
+<!--             3           -->
+<!--  Skills section -->
+
+<section class="skills" id="skills">
+        <h2 class="skills-title">My <span>Skills</span></h2> <!-- Section title -->
+        <div class="skills-grid">   <!-- Grid container for skill cards -->
+
+            <!-- Skill 1: Python -->
+            <div class="skill-card">
+
+                <div class="skill-header">
+                    <h3>Python</h3>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%"></div>
+                </div>
+                <p class="skill-percentage">90%</p> <!-- Percentage text -->
+            </div>
+
+            <!-- Skill 2: Java -->
+            <div class="skill-card">
+
+                <div class="skill-header">
+                    <h3>Java</h3>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%"></div>
+                </div>
+                <p class="skill-percentage">75%</p>
+            </div>
+
+            <!-- Skill 3: UI/UX -->
+            <div class="skill-card">
+
+                <div class="skill-header">
+                    <h3>UI/UX</h3>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%"></div>
+                </div>
+                <p class="skill-percentage">60%</p>
+            </div>
+
+            <!-- Skill 4: Web dev -->
+            <div class="skill-card">
+
+                <div class="skill-header">
+                    <h3>Web Development</h3>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 55%"></div>
+                </div>
+                <p class="skill-percentage">55%</p>
+            </div>
+        </div>
+</section>
+
+
+<!--             3           -->
+<!--  Projects section -->
+
+<section class="project" id="projects">
+    <div class="container">
+        <h2 class="project-title">My <span>Projects</span></h2> <!-- Section title -->
+        <div class="projects-grid">  <!-- Projects grid container -->
+
+                <!-- Project 1 -->
+                <div class="project-card" id="project1">
+                    <!-- Project text content -->
+                    <div class="project-content">
+                        <h3>Founder & Owner | Masarra World Store</h3>
+                        <p>
+                            Established and managed an e-commerce platform specializing in premium children's products.                        </p>
+                    </div>
+
+                    <!-- Project image -->
+                    <div class="project-img">
+                        <img src="assest/images/Massara.png" alt="Project 1 Image">
+                    </div>
+                </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assest/images/Arduino_Uno.jpg" alt="Project 2 Image">
+                </div>
+
+                <div class="project-content">
+                    <h3>Programming Team Lead | Chem-E-Car Competition 2024</h3>
+                    <p>
+                        - Led the programming department in designing and developing a chemically-powered vehicle.
+                        - Engineered the control system using Arduino to ensure precise timing and integration between chemical reactions and mechanical movement.                </p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Solution Hackathon - Designer</h3>
+                    <p>
+                        Lead the FCC/Solution Hackathon design team during 2024-2025.
+                        Contributed to create appealing designs for
+                        the hackathon to be used in the marketing and the competition's material.
+                    </p>
+                </div>
+
+                <div class="project-img">
+                    <img src="assest/images/Sol-hackathon.jpg" alt="Project 3 Image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!--             4           -->
+<!--  Contact me  section-->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="contact-title">Let's <span>Connect</span></h2> <!-- Section title -->
+        <p class="contact-subtitle">Feel free to reach out!</p>
+
+        <!-- Contact form card -->
+        <div class="contact-card">
+            <form action="#">
+                <!-- Name input -->
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <div class="input-field">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" placeholder="Your name" required> <!-- user input field / mandatory -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email input -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <div class="input-field">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" placeholder="Your email" required> <!-- user input field / mandatory -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message textarea -->
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <div class="input-field">
+                        <div class="input-wrapper">
+                            <textarea id="message" placeholder="Your message" required></textarea> <!-- user input field / mandatory -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
 </body>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>© 2026 --- Built By <span>rayhaan1425@gmail.com</span></p> <!-- Copyright text -->
+        </div>
+    </div>
+</footer>
+
 </html>
